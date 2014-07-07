@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ActionPackVariantsExample</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<% if request.variant.include? :tablet %>
+  <small>Welcome Tablet User</small>
+<% elsif request.variant.include? :phone %>
+  <small>Welcome Phone User</small>
+<% end %>
+
+</body>
+</html>

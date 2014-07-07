@@ -1,0 +1,3 @@
+== README
+
+RichOnRails.com Action Pack Variants Example.  See http://richonrails.com/articles/action-pack-variants-in-rails-4-1 for details.
